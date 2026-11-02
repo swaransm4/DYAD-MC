@@ -3,11 +3,12 @@ print('This program will help you choose what schools you should go to for colle
 
 user_score = 0
 user_schools = []
+user_major_schools = []
 
 user_name = input('\nPlease enter your name: ')
 print(f'\nHello, {user_name}! Let\'s get started.')
 
-user_major = input('\nWhat is your intended major?\nType 1 for Computer Science\nType 2 for Engineering\nType 3 for Business\nType 4 for Biology\nType 5 for Psychology\nType 6 for English\nType 7 for History\nType 8 for Political Science\nType 9 for Economics\nType 10 for Mathematics\nPlease enter the number corresponding to your intended major: ')
+user_major = int(input('\nWhat is your intended major?\nType 1 for Computer Science\nType 2 for Engineering\nType 3 for Business\nType 4 for Biology\nType 5 for Psychology\nType 6 for English\nType 7 for History\nType 8 for Political Science\nType 9 for Economics\nType 10 for Mathematics\nPlease enter the number corresponding to your intended major: '))
 user_gpa = float(input('What is your current GPA?  '))
 user_tests = input('Did you take the SAT or ACT? (Please type "SAT" or "ACT") ')
 
@@ -230,4 +231,113 @@ if user_score >= 100:
 else:
     print('\nBased on your stats, you may want to consider community colleges or trade schools as options for your education. These institutions can provide valuable skills and training for various careers.')
 
-if user_major == 'Computer'
+if user_major == 1:
+    user_major_schools = ["Massachusetts Institute of Technology", "Stanford University", "University of California, Berkeley",
+    "Carnegie Mellon University", "University of Illinois Urbana-Champaign", "University of Washington",
+    "Cornell University", "Georgia Institute of Technology", "University of Texas at Austin",
+    "University of Michigan", "Princeton University", "California Institute of Technology",
+    "University of California, Los Angeles", "University of California, San Diego", "Harvard University",
+    "Columbia University", "Yale University", "University of Pennsylvania",
+    "Brown University", "Dartmouth College", "Duke University",
+    "Northwestern University", "Johns Hopkins University", "Rice University",
+    "Vanderbilt University", "Washington University in St. Louis", "University of Notre Dame",
+    "Purdue University", "University of Wisconsin-Madison", "University of Maryland, College Park",
+    "University of Massachusetts Amherst", "University of Southern California", "New York University",
+    "Northeastern University", "Boston University", "Tufts University",
+    "Rensselaer Polytechnic Institute", "Worcester Polytechnic Institute", "Rochester Institute of Technology",
+    "Stevens Institute of Technology", "Virginia Tech", "University of Virginia",
+    "William & Mary", "George Mason University", "North Carolina State University",
+    "University of North Carolina at Chapel Hill", "Duke University", "Wake Forest University",
+    "Clemson University", "University of South Carolina", "University of Georgia",
+    "Georgia State University", "Florida State University", "University of Florida",
+    "University of Miami", "University of Central Florida", "University of South Florida",
+    "Auburn University", "University of Alabama", "Louisiana State University",
+    "Tulane University", "Texas A&M University", "University of Houston",
+    "Texas Tech University", "University of Texas at Dallas", "Baylor University",
+    "Southern Methodist University", "University of College Station", "Oklahoma State University",
+    "University of Oklahoma", "University of Kansas", "Kansas State University",
+    "University of Nebraska-Lincoln", "Iowa State University", "University of Iowa",
+    "University of Minnesota Twin Cities", "Michigan State University", "Michigan Technological University",
+    "Wayne State University", "Case Western Reserve University", "Ohio State University",
+    "Miami University", "University of Cincinnati", "Indiana University Bloomington",
+    "Rose-Hulman Institute of Technology", "University of Notre Dame", "Illinois Institute of Technology",
+    "University of Chicago", "University of Illinois Chicago", "DePaul University",
+    "Marquette University", "Missouri University of Science and Technology", "University of Missouri",
+    "Colorado School of Mines", "University of Colorado Boulder", "University of Utah",
+    "Brigham Young University", "Arizona State University", "University of Arizona",
+    "Northern Arizona University", "University of New Mexico", "New Mexico State University",
+    "Oregon State University", "University of Oregon", "Portland State University",
+    "University of California, Irvine", "University of California, Davis", "University of California, Santa Barbara",
+    "University of California, Santa Cruz", "University of California, Riverside", "San Diego State University",
+    "San Jose State University", "California Polytechnic State University, San Luis Obispo", "California State University, Long Beach",
+    "Santa Clara University", "University of San Francisco", "University of San Diego",
+    "Seattle University", "Washington State University", "University of Hawaii at Manoa"
+    ]
+elif user_major == 2:
+    user_major_schools = ["Massachusetts Institute of Technology", "Stanford University", 
+    "University of California, Berkeley", "Carnegie Mellon University", 
+    "California Institute of Technology", "Georgia Institute of Technology", 
+    "University of Michigan", "University of Illinois Urbana-Champaign", 
+    "Cornell University", "Purdue University", 
+    "University of Texas at Austin", "Princeton University", 
+    "Columbia University", "University of Washington", 
+    "University of California, Los Angeles", "University of California, San Diego", 
+    "Harvard University", "University of Pennsylvania", 
+    "Johns Hopkins University", "Northwestern University", 
+    "University of Southern California", "Duke University", 
+    "Rice University", "Vanderbilt University", 
+    "Washington University in St. Louis", "University of Notre Dame", 
+    "Texas A&M University", "Virginia Tech", 
+    "North Carolina State University", "University of Wisconsin-Madison", 
+    "University of Maryland", "University of Minnesota", 
+    "Ohio State University", "Pennsylvania State University", 
+    "University of California, Irvine", "University of California, Santa Barbara", 
+    "University of California, Davis", "Boston University", 
+    "Northeastern University", "New York University", 
+    "University of Rochester", "Case Western Reserve University", 
+    "Rensselaer Polytechnic Institute", "Worcester Polytechnic Institute", 
+    "Lehigh University", "Rutgers University", 
+    "University of Florida", "University of Virginia", 
+    "Clemson University", "Auburn University", 
+    "University of Georgia", "Florida State University", 
+    "University of Miami", "Tulane University", 
+    "Southern Methodist University", "Texas Christian University", 
+    "Baylor University", "University of Houston", 
+    "University of Texas at Dallas", "Texas Tech University", 
+    "Arizona State University", "University of Arizona", 
+    "University of Utah", "Brigham Young University", 
+    "Colorado School of Mines", "University of Colorado Boulder", 
+    "Colorado State University", "Oregon State University", 
+    "University of Oregon", "Washington State University", 
+    "Iowa State University", "University of Iowa", 
+    "University of Nebraska-Lincoln", "University of Kansas", 
+    "Kansas State University", "Missouri University of Science and Technology", 
+    "University of Missouri", "Michigan State University", 
+    "Michigan Technological University", "Wayne State University", 
+    "University of Illinois Chicago", "Illinois Institute of Technology", 
+    "Indiana University Bloomington", "Rose-Hulman Institute of Technology", 
+    "University of Notre Dame", "University of Cincinnati", 
+    "Case Western Reserve University", "University of Dayton", 
+    "University of Pittsburgh", "Drexel University", 
+    "Temple University", "University of Delaware", 
+    "University of Maryland, Baltimore County", "George Washington University", 
+    "George Mason University", "Virginia Commonwealth University", 
+    "West Virginia University", "University of North Carolina at Charlotte", 
+    "University of North Carolina at Chapel Hill", "Duke University", 
+    "Wake Forest University", "University of South Carolina", 
+    "Clemson University", "Georgia State University", 
+    "University of Central Florida", "University of South Florida", 
+    "Florida International University", "University of Alabama", 
+    "University of Alabama in Huntsville", "Auburn University", 
+    "Mississippi State University", "University of Mississippi", 
+    "Louisiana State University", "Tulane University", 
+    "University of Arkansas", "Oklahoma State University", 
+    "University of Oklahoma", "University of New Mexico", 
+    "New Mexico State University", "Stevens Institute of Technology"
+    ]
+elif user_major == 3:
+    user_major_schools = []
+elif user_major == 4:
+    user_major_schools = []
+elif user_major == 6:
+    user_major_schools = []
